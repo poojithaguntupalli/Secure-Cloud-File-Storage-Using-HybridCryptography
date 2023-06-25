@@ -1,0 +1,74 @@
+<html>
+	<body>
+		<center class="screen" style="background-image: url('./cloud2.jpeg');">
+			<br><br>
+			<b><p class="font" style ="color:#black; font-size:60px; font-style:italic;">Secure File Storage in Cloud Computing using Hybrid Cryptography Algorithm</p></b>
+			<b><p class="font" style="color:black; font-size:20px">Upload Sucsessful. Please Proceed to Download the Encryption Key!!!</p></b><br><br><br>
+			<b><p class="font" style="color:black; font-size:20px">{{key}}</p></b><br><br><br>
+			<table>
+				<tr>
+					<td><a  href='return-key/My_Key.pem' target="blank"><button class="button"> Download Key</button></a></td>
+					<td><a  href='home'><button  class="button">Back to HOME</button></a></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<footer class = "footer-copyright">
+				<a class="font" target="blank" href="https://ieeexplore.ieee.org/abstract/document/7566416">Please refer to this page for more details</a><br><br><br><br><br><br>
+				<p class="font">Copyright &copy; 2023 <a href="#">team16project.com</a>, UTD CS 6301 Team 16 Project</p>
+
+			</footer>
+		</center>
+	</body>
+	<style>
+		.button {
+		  background-color: #388EA4;
+		  border: none;
+		  border-radius: 15px;
+		  color: white;
+		  padding: 10px 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 14px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.screen {
+			width:100%;
+			height:100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.font{
+			font-family:Comic Sans MS;
+
+		}
+		input[type=file]::file-selector-button {
+			margin-right: 20px;
+			border: none;
+			background: #388EA4;
+			padding: 10px 10px;
+			border-radius: 10px;
+			color: #fff;
+			cursor: pointer;
+			transition: background .2s ease-in-out;
+		}
+
+		input[type=file]::file-selector-button:hover {
+			background: #white;
+		}
+		body{
+			background-image: url("{{ url_for('static', filename='cloud2.jpeg') }}");
+			width:100%;
+			height:100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+</html>

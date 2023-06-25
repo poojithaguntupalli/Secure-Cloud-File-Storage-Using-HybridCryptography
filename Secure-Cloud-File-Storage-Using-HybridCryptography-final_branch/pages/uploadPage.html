@@ -1,0 +1,68 @@
+<html>
+	<body>
+		<center class="screen" style="background-image: url('./cloud2.jpeg');">
+			<br><br>
+			<b><p class="font" style ="color:#black; font-size:60px; font-style:italic;">Secure File Storage in Cloud Computing using Hybrid Cryptography Algorithm</p></b>
+			<b><p class="font" style="color:#black; font-size:20px">Please Upload a File to Store it in Cloud!!!</p></b><br><br><br>
+			<form action = "/data" method = "POST" enctype = "multipart/form-data">
+				<input type = "file" name = "file" required/>
+				<br><br><input type="submit" class="button" value=" Submit">
+			</form>
+			<br>
+			<br>
+			<br>
+			<br>
+			<footer class = "footer-copyright">
+				<a class="font" target="blank" href="https://ieeexplore.ieee.org/abstract/document/7566416">Please refer to this page for more details</a><br><br><br>
+				<p class="font">Copyright &copy; 2023 <a href="#">team16project.com</a>, UTD CS 6301 Team 16 Project</p>
+			</footer>
+		</center>
+	</body>
+	<style>
+		.button {
+		  background-color: #388EA4;
+		  border: none;
+		  border-radius: 15px;
+		  color: white;
+		  padding: 10px 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 14px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.screen {
+			width:100%;
+			height:100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.font{
+			font-family:Comic Sans MS;
+
+		}
+			input[type=file]::file-selector-button {
+			margin-right: 20px;
+			border: none;
+			background: #388EA4;
+			padding: 10px 10px;
+			border-radius: 10px;
+			color: #fff;
+			cursor: pointer;
+			transition: background .2s ease-in-out;
+		}
+		input[type=file]::file-selector-button:hover {
+			background: #white;
+		}
+		body{
+			background-image: url("{{ url_for('static', filename='cloud2.jpeg') }}");
+			width:100%;
+			height:100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+</html>
